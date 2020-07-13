@@ -32,6 +32,7 @@ body {
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -49,12 +50,8 @@ table {
 }
 
 
-
-
-
-
 body{
-    background-image: url(https://i.pximg.net/img-original/img/2016/07/20/14/58/16/58000410_p0.jpg)
+    background-image: url(https://i.pximg.net/img-original/img/2013/08/29/18/25/18/38151436_p0.jpg)
 }
 
 
@@ -64,6 +61,11 @@ body{
 
 }
 
+nav a{
+    text-decoration: none;
+        color:black;
+        margin-right:50px;
+}
 .ProjName{
     text-align:Center;
     font-size:150px;
@@ -110,33 +112,72 @@ body{
 }
 
 .Ratchet{
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     border:5px solid teal;
     margin:2% 0 0 0;
     
 }
 
 .Moon{
+    width: 425px;
+    height: 500px;
+    border:5px solid teal;
+    margin:2% 0 0 0;
+}
+
+.Pokemon{
     width: 400px;
-    height: 300px;
+    height: 500px;
     border:5px solid teal;
     margin:2% 0 0 0;
 }
 
 .Interstellar{
     width: 400px;
-    height: 300px;
+    height: 500px;
     border:5px solid teal;
     margin:2% 0 0 0;
 }
 
+.Garner{
+    width:45%;
+    height: 600px;
+    border:5px solid teal;
+    margin:2% 0 0 0;
+}
+
+.mercy{
+    width: 45%;
+    height: 600px;
+    border:5px solid teal;
+    margin:2% 0 0 0;
+
+}
 .ImgContainer{
  display:flex;
- justify-content: space-evenly;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ 
 
 }
 
+.ImgContainer img{
+margin-left:10px;
+}
+
+.ImgContainer2{
+    display:flex
+}
+
+.AboutContainer{
+    height:700px;
+    display:flex;
+    justify-content: space-around;
+
+    
+}
 .title h2{
     font-size:50px;
     width:500px;
@@ -183,28 +224,65 @@ body{
     border:5px solid green;
     margin:2% 0 0 0;
 
-
 }
 
+
+.town{
+    width: 400px;
+    height: 300px;
+    border:5px solid green;
+    margin:2% 0 0 0;
+}
+
+.bread{
+    width: 400px;
+    height: 300px;
+    border:5px solid green;
+    margin:2% 0 0 0;
+}
+
+.cow{
+    width: 400px;
+    height: 300px;
+    border:5px solid green;
+    margin:2% 0 0 0;
+}
+
+.beach{
+    width: 400px;
+    height: 300px;
+    border:5px solid green;
+    margin:2% 0 0 0;
+}
+
+
+
+.flower{
+    width: 400px;
+    height: 300px;
+    border:5px solid green;
+    margin:2% 0 0 0;
+}
 .PhotoImg{
     margin:50px 0 0 0px;
     display:flex;
+    flex-flow: wrap;
     justify-content: space-evenly;
+
 }
 
-.ProjText h2{
+.projects h2{
     font-size:50px;
-    width:500px;
-    text-align:center;
-    margin:10% 0 2% 37%;
-    color: indianred;
-
+    height:200px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    color:indianred
 }
 
 .conLinks h2{
     font-size:50px;
-    
-    
+
 }
 
 .conLinks{
@@ -215,5 +293,302 @@ body{
 
 .ContainerLinks{
     width:1000px;
-    margin:6% 0 0 0;
+    margin:24% 0 0 24%;
 }
+
+@media (max-width: 800px){
+    .Links{
+    height:300px;
+    display:flex;
+    flex-flow: column;
+    margin-top:20px;
+
+    }
+    nav a{
+        font-size:45px;
+        padding:0 15px;
+        text-decoration: none;
+        color:black;
+        margin-right: 0;
+        display:flex;
+        flex-flow:column;
+        margin:20px;
+
+    }
+
+    .Name{
+        font-size:50px;
+        text-align:center;
+    }
+
+    .Garner{
+        width:150px;
+        height:400px;
+    }
+    
+    .mercy{
+        width:250px;
+        height:400px;
+    }
+    
+    .ImgContainer img{
+        width:45%;
+
+    }
+
+    .ImgContainer{
+        width:700px;
+        justify-content: stretch;
+        margin-left:30px;
+    
+    }
+        
+
+    .MyLove h2{
+        margin-left:0;
+        
+    }
+    .MyProj{
+        width:200px;
+    }
+.ProBox{
+    width:400px;
+}
+ 
+.AboutContainer{
+    height:1000px;
+    width:100%;
+    display:flex;
+    justify-content: start
+}
+
+.textbox{
+    width:800px;
+}
+
+body{
+    height:500px;
+}
+
+.PhotoMe{
+    width:360px;
+    height:445px;
+}
+
+.girlfriend{
+    width:330px;
+    height:500px;
+}
+.food{
+    width:500px;
+    height:640px;
+}
+
+.AboutContainer img{
+    margin:0 auto;
+    height:500px;
+}
+
+.title{
+    margin-right: 900px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.title h2{
+    margin-left: 165px;
+    margin-bottom: 20px;
+}
+
+.AboutContainer{
+    height:500px;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.PhotoImg{
+    width:800px;
+    display:flex;
+    flex-flow: wrap;
+
+}
+
+.PhotoImg img{
+    width:350px;
+}
+
+.projects h2{
+    height:100px;
+}
+
+.conLinks{
+    width:425px;
+    display:flex;
+
+}
+
+.conLinks h2{
+    margin:20px 20px 20px 0;
+}
+
+.conLinks a{
+    text-decoration: none;
+}
+}
+
+
+
+
+
+@media (max-width: 500px){
+
+    nav{
+     display:flex;
+     width:50px;
+     margin-right: 450px;
+    }
+
+    .Links{
+        height:100px;
+    }
+        nav a{
+            width:400px;
+            font-size:15px;
+            padding:0 15px;
+            height:25px;
+            text-decoration: none;
+            color:black;
+ 
+        }
+
+        }
+        .MyLove h2{
+            font-size:25px;
+            
+        }
+    
+        .Name{
+            font-size:50px;
+            text-align:center;
+        }
+    
+        .Garner{
+            width:200px;
+            height:400px;
+        }
+        
+        .mercy{
+            width:200px;
+            height:400px;
+        }
+        
+        .img{
+        width:200px;
+        height:400px;
+        margin-right:50px;
+}
+
+        .ImgContainer img{
+            width:90%;
+
+        }
+    
+        .ImgContainer{
+            width:90%;
+            justify-content: stretch;
+        
+        }
+            
+        .MyLove h2{
+            margin-left: 35px;
+            
+        }
+        .MyProj{
+            width:200px;
+        }
+    .ProBox{
+        width:400px;
+    }
+     
+    .AboutContainer{
+        height:1000px;
+        width:100%;
+        display:flex;
+        justify-content: start
+    }
+    
+    .textbox{
+        width:800px;
+    }
+    
+    .PhotoMe{
+        width:400px;
+        height:445px;
+    }
+    
+    .girlfriend{
+        width:400px;
+        height:500px;
+    }
+    .food{
+        width:400px;
+        height:500px;
+    }
+    
+ 
+    #about p{
+    width:300px;
+    height:500px;
+
+}
+
+#about h2{
+    width:180px;
+}
+
+    .AboutContainer{
+        display:flex;
+        flex-flow:wrap;
+        margin:200px 0 0 0;
+    }
+    
+
+    .PhotoImg{
+        width:800px;
+        display:flex;
+        flex-flow:column;
+        margin-left: 70px;
+        
+    
+    }
+    
+    .PhotoImg img{
+        width:350px;
+    }
+    
+ 
+    
+    .conLinks{
+        width:800px;
+        display:flex;
+        flex-flow:column;
+        margin-left:40px;
+    
+    }
+    
+    .conLinks h2{
+        margin:20px 0 20px 0;
+    }
+    
+    .conLinks a{
+        text-decoration: none;
+    }
+
+    .Name, nav a{
+        font-size:25px;
+            padding:0 15px;
+            text-decoration: none;
+            color:black;
+            margin-right: 0;
+    }
+
